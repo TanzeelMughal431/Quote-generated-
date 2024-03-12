@@ -42,13 +42,39 @@ blockquote {
 .box-quote blockquote::after {
   content: '"';
 }
-
+.box-quote h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+.box-quote h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  position: absolute;
+  background-color: rgb(28, 139, 242);
+  transform: translate(-50%);
+  left: 50%;
+  border-radius: 14px;
+  top: 70px;
+}
 #author {
-  background-color: red;
+  margin-left: 440px;
+}
+#author::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(28, 139, 242);
+  transform: translate(-50%);
+  left: 80%;
+  border-radius: 14px;
+  bottom: 90px;
 }
 button:hover {
   cursor: pointer;
 }
+
 .btn-quote button:nth-child(1) {
   cursor: pointer;
   background-color: #fff;
