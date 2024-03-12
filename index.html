@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    z
+
+    <title>Quote-site</title>
+  </head>
+  <body>
+    <div class="box-quote">
+      <h2>Quote of the Day</h2>
+      <blockquote id="quote">Loading</blockquote>
+      <span id="author">Loading</span>
+    </div>
+  </body>
+  <script>
+    const api_url = "https://api.quotable.io/random";
+    async function getquote(url) {
+      const response = await fetch(url);
+      var data = await response.json();
+      // let qote = data.content;
+      // console.log(qote);
+      let quote = document.getElementById("quote");
+      quote.innerHTML=data.content;
+      // ...................
+      let author = document.getElementById("author");
+      author.innerHTML=data.author;
+      console.log(data);
+
+    }
+    getquote(api_url);
+  </script>
+</html>
