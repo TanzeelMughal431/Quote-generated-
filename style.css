@@ -29,6 +29,9 @@ body {
 }
 blockquote {
   color-scheme: red;
+  font-size: 18px;
+  font-weight: 600;
+  color: #810f6c;
 }
 .btn-quote {
   margin-top: 20px;
