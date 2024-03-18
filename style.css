@@ -78,7 +78,7 @@ button:hover {
 .btn-quote button:nth-child(1) {
   cursor: pointer;
   background-color: #fff;
-  color: rgb(28, 139, 242);
+  color: rgb(242, 28, 228);
   font-size: medium;
   padding: 7px 20px;
   border-radius: 12px;
